@@ -17,6 +17,11 @@ class DetailViewModel(app:Application): AndroidViewModel(app) {
     val TAG = "vollyTag"
     private var queue: RequestQueue? = null
 
+    fun update(id: String) {
+        // diisi  coding untuk simpan studentLD object ke server
+        // pake volley
+    }
+
     fun fetch(id:String) {
         // volley ke API
         queue = Volley.newRequestQueue(getApplication())
